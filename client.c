@@ -1,3 +1,29 @@
+/*
+The following the client-side implementation of socket-based File Transfer Protocol in C
+The implementation has been done for linux system
+
+Run the compiled code on the server node via
+$ ./client <Server IP Address> <Server Port number>
+
+To recompile the code, 
+$ gcc client.c -o client
+
+The following set of functionalities has are supported
+PUT : Transfer a file from client to server
+GET : Transfer a file from server to client
+MGET : Transfer all files of a given extension from server to client
+MPUT : Transfer all files of a given extension from client to server
+
+Command Format
+PUT​ -> ​ PUT <filename>
+GET​ -> ​ GET <filename>
+MGET​ -> ​ MGET <extension including dot>
+	For example : MGET .c
+MPUT​ -> ​ MPUT <extension including dot>
+	For example : MPUT .c
+
+*/
+
 #include "client.h"
 
 int main(int argc, char const *argv[])
