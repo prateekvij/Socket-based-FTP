@@ -1,3 +1,14 @@
+/*
+The following the server implementation of socket-based File Transfer Protocol in C
+The implementation has been done for linux system
+
+Run the compiled code on the server node via
+$ ​./server <Server Port number>
+
+To recompile the code, 
+$ gcc server.c -o server
+
+*/
 #include "server.h"
 
 int main(int argc, char const *argv[])
